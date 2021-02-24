@@ -18,42 +18,42 @@
           @csrf
           <div class="form-group">    
               <label for="empresa">Empresa:</label>
-              <input type="text" class="form-control" name="empresa"/>
+              <input type="text" class="form-control" name="empresa" value="{{old('empresa')}}"/>
           </div>
 
           <div class="form-group">
               <label for="nom">Nom:</label>
-              <input type="text" class="form-control" name="nom"/>
+              <input type="text" class="form-control" name="nom" value="{{old('nom')}}"/>
           </div>
 
           <div class="form-group">
               <label for="primer_llinatge">Primer llinatge:</label>
-              <input type="text" class="form-control" name="primer_llinatge"/>
+              <input type="text" class="form-control" name="primer_llinatge" value="{{old('primer_llinatge')}}"/>
           </div>
 
           <div class="form-group">
               <label for="segon_llinatge">Segon llinatge:</label>
-              <input type="text" class="form-control" name="segon_llinatge"/>
+              <input type="text" class="form-control" name="segon_llinatge" value="{{old('segon_llinatge')}}"/>
           </div>
 
           <div class="form-group">
               <label for="document_identitat">Document identitat:</label>
-              <input type="text" class="form-control" name="document_identitat"/>
+              <input type="text" class="form-control" name="document_identitat" value="{{old('document_identitat')}}"/>
           </div>
 
           <div class="form-group">
               <label for="pais_document">Pais Document identitat:</label>
-              <input type="text" class="form-control" name="pais_document"/>
+              <input type="text" class="form-control" name="pais_document" value="{{old('pais_document')}}"/>
           </div>
 
           <div class="form-group">
               <label for="provincia">Provincia:</label>
-              <input type="text" class="form-control" name="provincia"/>
+              <input type="text" class="form-control" name="provincia" value="{{old('provincia')}}"/>
           </div>
 
           <div class="form-group">
               <label for="municipi">Municipi:</label>
-              <input type="text" class="form-control" name="municipi"/>
+              <input type="text" class="form-control" name="municipi" value="{{old('municipi')}}"/>
           </div>
           <br>
           <div class="form-group">
@@ -66,12 +66,12 @@
           <br>
           <div class="form-group">
               <label for="telefon">Telefon:</label>
-              <input type="number" class="form-control" name="telefon"/>
+              <input type="number" class="form-control" name="telefon" value="{{old('telefon')}}"/>
           </div>
 
           <div class="form-group">
               <label for="email">Email:</label>
-              <input type="email" class="form-control" name="email"/>
+              <input type="email" class="form-control" name="email" value="{{old('email')}}"/>
           </div>
           <br>
           <button type="submit" class="btn btn-primary">Add contact</button>
