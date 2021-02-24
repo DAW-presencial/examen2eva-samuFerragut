@@ -100,18 +100,31 @@ class TutorController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'first_name'=>'required',
-            'last_name'=>'required',
-            'email'=>'required'
+            'empresa'=>'required',
+            'nom'=>'required',
+            'primer_llinatge'=>'required',
+            'segon_llinatge'=>'required',
+            'document_identitat'=>'required',
+            'pais_document'=>'required',
+            'provincia'=>'required',
+            'municipi'=>'required',
+            'telefon'=>'required',
+            'email'=>'required',
+            'estat'=>'required'
         ]);
 
         $contact = tutorEmpresa::find($id);
-        $contact->first_name =  $request->get('first_name');
-        $contact->last_name = $request->get('last_name');
+        $contact->empresa =  $request->get('empresa');
+        $contact->nom = $request->get('nom');
+        $contact->primer_llinatge = $request->get('primer_llinatge');
+        $contact->segon_llinatge = $request->get('segon_llinatge');
+        $contact->document_identitat = $request->get('document_identitat');
+        $contact->pais_document = $request->get('pais_document');
+        $contact->provincia = $request->get('provincia');
+        $contact->municipi = $request->get('municipi');
+        $contact->telefon = $request->get('telefon');
         $contact->email = $request->get('email');
-        $contact->job_title = $request->get('job_title');
-        $contact->city = $request->get('city');
-        $contact->country = $request->get('country');
+        $contact->estat = $request->get('estat');
         $contact->save();
 
         return redirect('/contacts')->with('success', 'Contact updated!');
