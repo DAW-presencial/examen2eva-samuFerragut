@@ -21,6 +21,9 @@
                 <li class="nav-item">
                 <a class="nav-link" href="/contacts">Contactos</a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/contacts/create">Crear nuevo tutor</a>
+                </li>
             </ul>
             </div>
         </div>
